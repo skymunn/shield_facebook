@@ -1,61 +1,62 @@
-<html>
+<!--
+    for gr33ntii, im sorry to cahnge your style code
+    and sorry for translating and change a litle bit of your work
+                                                                    -->
 
+<html>
     <head>
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <title>Bật khiên facebook</title>
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-                            <meta charset="utf-8" />
+            <title>Facebook Shield Activator</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+            <meta charset="utf-8" />
     </head>
 <style>
     body {
-                background-color: white;
-                            background-image: url("http://www.anime-wp.site/wp-content/uploads/2018/03/anime-wallpapers-4k-9926.jpeg");
-                                        background-repeat: no-repeat;
-                                                    background-size: cover;
+        background-color: white;
+        background-image: url("https://cdn.discordapp.com/attachments/454637610443472927/455123965514350613/4Uaz4Xs.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
                                                             }
-
         .input {
-                    max-width: 28%;
-                            }
+        max-width: 28%;
+        }
 
-            .TitlePage {
-                        padding-bottom: 320px;
-                                    color: black;
-                                                margin: auto;
-                                                            font-size: 35px;
-                                                                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-                                                                                }
+        .TitlePage {
+        padding-bottom: 320px;
+        color: black;
+        margin: auto;
+        font-size: 35px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
 </style>
 
 <body>
-        <center>
-                    <form action="/khienfb/" method="post">
-                                <h1 class="TitlePage" id="Title">Bật Khiên Facebook</h1>
-                                        </br>
-                                                </br>
-                                                        <input class="input is-primary" id="tokeninput" name="token" type="text" placeholder="Nhập Token Vào Đây">
-                                                                </br>
-                                                                        <input class="button is-danger" id="submit" type="submit" value="Bật Khiên">
-                                                                        <a class="button is-link" href="http://toolviet.com/tools/get-token-facebook/">Get Token</a>
-                                                                                </form>
-                                                                                    </center>
+    <center>
+        <form action="/shieldfb/" method="post">
+        <h1 class="TitlePage" id="Title">Facebook Shield Activator</h1>
+        </br>
+        </br>
+        <input class="input is-primary" id="tokeninput" name="token" type="text" placeholder="Insert your token here!">
+        </br>
+        <input class="button is-danger" id="submit" type="submit" value="ACTIVATE!">
+        <a class="button is-link" href="http://toolviet.com/tools/get-token-facebook/">Get Token</a>
+        </form>
+        </center>
 </body>
 <script>
     let input = document.getElementById("tokeninput");
-       input.addEventListener("keyup", (onpress) => {
-                   onpress.preventDefault();
-                           if (onpress.keyCode === 13) {
-                                           document.getElementById("submit").click()
-                                                       }
-                               })
+    input.addEventListener("keyup", (onpress) => {
+    onpress.preventDefault();
+    if (onpress.keyCode === 13) {
+        document.getElementById("submit").click()
+        }
+    })
 
     let titlepage = document.getElementById("Title");
-        titlepage.style.color = "white";
+    titlepage.style.color = "white";
 
-            setInterval(() => {
-                        titlepage.style.color = titlepage.style.color == "white" ? "violet" : "white";
-                            }, 1000)
+    setInterval(() => { titlepage.style.color = titlepage.style.color == "white" ? "violet" : "white"; }, 1000)
 </script>
 
 </html>
