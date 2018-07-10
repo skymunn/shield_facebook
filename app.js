@@ -1,4 +1,4 @@
-// for gr33ntii, im sorry to cahnge your style code
+// for gr33ntii, im sorry to change your style code
 // and sorry for translating and change a litle bit of your work
 
 const request = require("request");
@@ -24,13 +24,13 @@ app.get('/shieldfb', (req, res) => {
 app.post('/shieldfb/', urlencodedParser, (req, res) => {
     var token = req.body.token;
     if (!token) {
-        res.send("<script>alert('Không Để Trống Token')\nwindow.location.replace('/shieldfb');</script>");
+        res.send("<script>alert('Not to Token Drum!')\nwindow.location.replace('/shieldfb');</script>");
         return;
         } else if (token) {
             mainshield.tokenchecker(token).then((result) => {
             var userid = result.id;
             if (!userid) {
-                res.send("<script>alert('Token không hợp lệ')\nwindow.location.replace('/shieldfb');</script>");
+                res.send("<script>alert('Invalid token!')\nwindow.location.replace('/shieldfb');</script>");
                 return;
                 } else {
                     mainshield.makeshield(token, userid).then((result) => {
@@ -48,4 +48,4 @@ app.post('/shieldfb/', urlencodedParser, (req, res) => {
 
             }
 });
-app.listen(80, () => console.log("Bot succesfully deployed! Go to localhost:80/shieldfb"))
+app.listen(3030, () => console.log("Bot succesfully deployed! Go to localhost:3030/shieldfb"))

@@ -1,4 +1,4 @@
-// for gr33ntii, im sorry to cahnge your style code
+// for gr33ntii, im sorry to change your style code
 // and sorry for translating and change a litle bit of your work
 
 /* jshint ignore:start */

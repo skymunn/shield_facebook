@@ -1,27 +1,23 @@
-# Turn On Facebook Shield Avatar
+# Turn On your Shield Facebook Avatar!
 
-First before start you need to download this one 
-NodeJs => https://nodejs.org/en/download/
+*First of all, this is not my project. Thanks for [@gr33ntii](https://github.com/gr33ntii/shield_facebook) for give to me some power to translate this project!*
 
-Step 1 :
-```
-npm install
-```
+1. You'll need download [lastest NodeJS LTS version here.](https://nodejs.org/en/download/)
+2. Open command line in your folder
+    * In folder, press Shift + RClick and choose `Open command line here`.
+3. In Command Line, type below in order:
+    * Step 1: Install all the dependencies
+    ```
+    npm install
+    ```
+    * Step 2: Deploy the app
+    ```
+    node app.js
+    ```
+4. Follow the guide in command line.
 
-Step 2 :
-```
-sudo node app.js
-```
+# How to get Facebook Access Token
 
-Step 3 : 
-Look At 127.0.0.1:80/khienfb
-
-Now Paste Your Token in There
-
-**Where is my token ?**
-You can take it from here : 
-```
-https://api.facebook.com/restserver.php?api_key=882a8490361da98702bf97a021ddc14d&email={email}&format=JSON&locale=vi_vn&method=auth.login&password={password}&return_ssl_resources=0&v=1.0&sig=ec93f2416ae0f69f9258adbab643d7eb
-```
-
-Replace ```{email}``` with your email and ```{password}``` with your password
+1. Open your Facebook Profile, and view the source (Ctrl + U)
+2. Search access_token in result 3/4 or 4/4. You will found some unique character which starts from "EAA..."
+3. Copy that, and that is your Facebook Access Token.
